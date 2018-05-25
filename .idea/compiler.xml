@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bean-mapping" target="1.8" />
+      <module name="dozer" target="1.8" />
+      <module name="fluent-validate" target="1.8" />
+      <module name="tech-validation" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

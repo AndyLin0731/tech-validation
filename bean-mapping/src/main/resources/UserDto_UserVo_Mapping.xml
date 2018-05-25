@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+  ~ Copyright (c) 2012-2018. github.houbb Inc.
+  ~ tech-validation All rights reserved.
+  -->
+
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+    <configuration>
+        <stop-on-errors>true</stop-on-errors>
+        <date-format>MM/dd/yyyy HH:mm</date-format>
+        <wildcard>true</wildcard>
+    </configuration>
+
+    <!--通配符默认指定为 true，意思是如果名称相同，默认去映射。-->
+    <mapping wildcard="true">
+        <class-a>com.github.houbb.i2.tech.bean.mapping.dto.UserDto</class-a>
+        <class-b>com.github.houbb.i2.tech.bean.mapping.vo.UserVo</class-b>
+        <field>
+            <a>name</a>
+            <b>nameVo</b>
+        </field>
+        <field>
+            <a>password</a>
+            <b>passwordVo</b>
+        </field>
+    </mapping>
+</mappings>

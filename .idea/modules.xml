@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bean-mapping/bean-mapping.iml" filepath="$PROJECT_DIR$/bean-mapping/bean-mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dozer/dozer.iml" filepath="$PROJECT_DIR$/dozer/dozer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fluent-validate/fluent-validate.iml" filepath="$PROJECT_DIR$/fluent-validate/fluent-validate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tech-validation.iml" filepath="$PROJECT_DIR$/tech-validation.iml" />
+    </modules>
+  </component>
+</project>
