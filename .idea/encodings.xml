@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/bean-mapping" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dozer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fluent-validate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/for-name" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/load-class" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -10,6 +10,7 @@
         <module>bean-mapping</module>
         <module>dozer</module>
         <module>fluent-validate</module>
+        <module>for-name</module>
     </modules>
 
     <properties>

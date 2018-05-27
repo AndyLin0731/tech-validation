@@ -6,9 +6,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
-  </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="FitzYang" />
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/load-class/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
