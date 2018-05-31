@@ -11,6 +11,7 @@
         <module>dozer</module>
         <module>fluent-validate</module>
         <module>for-name</module>
+        <module>long-polling</module>
     </modules>
 
     <properties>

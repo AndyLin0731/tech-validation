@@ -10,6 +10,7 @@
       <module name="fluent-validate" target="1.8" />
       <module name="for-name" target="1.8" />
       <module name="load-clazz" target="1.8" />
+      <module name="long-polling" target="1.8" />
       <module name="tech-validation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
