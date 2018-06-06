@@ -12,6 +12,7 @@
         <module>fluent-validate</module>
         <module>for-name</module>
         <module>long-polling</module>
+        <module>qlexpress</module>
     </modules>
 
     <properties>
