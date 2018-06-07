@@ -13,6 +13,7 @@
         <module>for-name</module>
         <module>long-polling</module>
         <module>qlexpress</module>
+        <module>okhttp</module>
     </modules>
 
     <properties>
