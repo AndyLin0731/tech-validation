@@ -15,6 +15,7 @@
         <module>qlexpress</module>
         <module>okhttp</module>
         <module>t-io</module>
+        <module>aviator</module>
     </modules>
 
     <properties>
