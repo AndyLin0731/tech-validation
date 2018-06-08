@@ -8,6 +8,7 @@
       <module name="aviator" target="1.8" />
       <module name="bean-mapping" target="1.8" />
       <module name="dozer" target="1.8" />
+      <module name="easy-poi" target="1.8" />
       <module name="fluent-validate" target="1.8" />
       <module name="for-name" target="1.8" />
       <module name="load-clazz" target="1.8" />

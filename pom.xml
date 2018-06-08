@@ -17,6 +17,7 @@
         <module>t-io</module>
         <module>aviator</module>
         <module>velocity</module>
+        <module>easy-poi</module>
     </modules>
 
     <properties>
