@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/qlexpress/qlexpress.iml" filepath="$PROJECT_DIR$/qlexpress/qlexpress.iml" />
       <module fileurl="file://$PROJECT_DIR$/t-io/t-io.iml" filepath="$PROJECT_DIR$/t-io/t-io.iml" />
       <module fileurl="file://$PROJECT_DIR$/tech-validation.iml" filepath="$PROJECT_DIR$/tech-validation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/velocity/velocity.iml" filepath="$PROJECT_DIR$/velocity/velocity.iml" />
     </modules>
   </component>
 </project>

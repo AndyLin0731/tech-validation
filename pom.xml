@@ -16,6 +16,7 @@
         <module>okhttp</module>
         <module>t-io</module>
         <module>aviator</module>
+        <module>velocity</module>
     </modules>
 
     <properties>
