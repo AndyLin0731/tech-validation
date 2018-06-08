@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/long-polling/long-polling.iml" filepath="$PROJECT_DIR$/long-polling/long-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttp/okhttp.iml" filepath="$PROJECT_DIR$/okhttp/okhttp.iml" />
       <module fileurl="file://$PROJECT_DIR$/qlexpress/qlexpress.iml" filepath="$PROJECT_DIR$/qlexpress/qlexpress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t-io/t-io.iml" filepath="$PROJECT_DIR$/t-io/t-io.iml" />
       <module fileurl="file://$PROJECT_DIR$/tech-validation.iml" filepath="$PROJECT_DIR$/tech-validation.iml" />
     </modules>
   </component>
