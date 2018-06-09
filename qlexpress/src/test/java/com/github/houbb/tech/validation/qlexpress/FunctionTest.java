@@ -28,11 +28,11 @@ import org.junit.Test;
 public class FunctionTest {
 
     /**
-     * 循环操作符测试
+     * 自定义函数测试
      * @throws Exception if any
      */
     @Test
-    public void defineOperateTest() throws Exception {
+    public void defineFunctionTest() throws Exception {
         final String express = "function add(int a,int b){\n" +
                 "  return a+b;\n" +
                 "};\n" +
