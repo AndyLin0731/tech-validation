@@ -9,6 +9,7 @@ import com.ql.util.express.DefaultContext;
 import com.ql.util.express.ExpressRunner;
 import com.ql.util.express.IExpressContext;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -26,20 +27,20 @@ public class MacroTest {
     @Test
     public void macroTest() throws Exception {
         ExpressRunner runner = new ExpressRunner();
-
         runner.addMacro("计算平均成绩", "(语文+数学+英语)/3.0");
         runner.addMacro("是否优秀", "计算平均成绩>90");
         IExpressContext<String, Object> context = new DefaultContext<>();
         context.put("语文", 88);
         context.put("数学", 99);
         context.put("英语", 95);
-        Object result = runner.execute("是否优秀", context, null, false, false);
-        System.out.println(result);
+        Boolean result = (Boolean) runner.execute("是否优秀", context, null, false, false);
+        Assert.assertTrue(result);
     }
 
     /**
      * 注意以下脚本int和没有int的区别
      * 备注：定义 int，则不包含平均分
+     *
      * @throws Exception if any
      */
     @Test

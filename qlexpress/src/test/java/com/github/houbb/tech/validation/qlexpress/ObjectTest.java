@@ -15,8 +15,7 @@ import org.junit.Test;
 /**
  * <p> 对象测试 </p>
  *
- * import com.ql.util.express.test.OrderQuery;
- * //系统自动会import java.lang.*,import java.util.*;
+ * 备注：例子来自官方例子
  *
  * <pre> Created: 2018/6/6 下午6:09  </pre>
  * <pre> Project: tech-validation  </pre>
@@ -28,81 +27,72 @@ import org.junit.Test;
 public class ObjectTest {
 
     @Test
-    public void test1() throws Exception{
-        String exp = "import com.github.houbb.tech.validation.qlexpress.CustBean;" +
-                "CustBean cust = new CustBean(1);" +
+    public void test1() throws Exception {
+        String exp = "import com.github.houbb.tech.validation.qlexpress.User;" +
+                "User cust = new User(1);" +
                 "cust.setName(\"小强\");" +
                 "return cust.getName();";
         ExpressRunner runner = new ExpressRunner();
-        //执行表达式，并将结果赋给r
-        String r = (String)runner.execute(exp,null,null,false,false);
-        System.out.println(r);
-        Assert.assertTrue("操作符执行错误","小强".equals(r));
+        String r = (String) runner.execute(exp, null, null, false, false);
+        Assert.assertEquals("操作符执行错误", "小强", r);
     }
 
     @Test
-    public void test2() throws Exception{
+    public void test2() throws Exception {
         String exp = "cust.setName(\"小强\");" +
-                // "cust.name = \"小强\";" +
                 "return cust.getName();";
-        IExpressContext<String,Object> expressContext = new DefaultContext<String,Object>();
-        expressContext.put("cust", new CustBean(1));
+        IExpressContext<String, Object> expressContext = new DefaultContext<>();
+        expressContext.put("cust", new User(1));
         ExpressRunner runner = new ExpressRunner();
-        //执行表达式，并将结果赋给r
-        String r = (String)runner.execute(exp,expressContext,null,false,false);
-        System.out.println(r);
-        Assert.assertTrue("操作符执行错误","小强".equals(r));
+        String r = (String) runner.execute(exp, expressContext, null, false, false);
+        Assert.assertEquals("操作符执行错误", "小强", r);
     }
 
     @Test
-    public void test3() throws Exception{
+    public void test3() throws Exception {
         String exp = "首字母大写(\"abcd\")";
         ExpressRunner runner = new ExpressRunner();
-        runner.addFunctionOfClassMethod("首字母大写", CustBean.class.getName(), "firstToUpper", new String[]{"String"},null);
-        //执行表达式，并将结果赋给r
-        String r = (String)runner.execute(exp,null,null,false,false);
-        System.out.println(r);
-        Assert.assertTrue("操作符执行错误","Abcd".equals(r));
+        runner.addFunctionOfClassMethod("首字母大写", User.class.getName(), "firstToUpper", new String[]{"String"}, null);
+        String r = (String) runner.execute(exp, null, null, false, false);
+        Assert.assertEquals("操作符执行错误", "Abcd", r);
     }
 
     /**
      * 使用别名
-     * @throws Exception
+     *
+     * @throws Exception if any
      */
     @Test
-    public void testAlias() throws Exception{
+    public void testAlias() throws Exception {
         String exp = "cust.setName(\"小强\");" +
                 "定义别名 custName cust.name;" +
                 "return custName;";
-        IExpressContext<String,Object> expressContext = new DefaultContext<String,Object>();
-        expressContext.put("cust", new CustBean(1));
+        IExpressContext<String, Object> expressContext = new DefaultContext<>();
+        expressContext.put("cust", new User(1));
         ExpressRunner runner = new ExpressRunner();
         //
         runner.addOperatorWithAlias("定义别名", "alias", null);
         //执行表达式，并将结果赋给r
-        String r = (String)runner.execute(exp,expressContext,null,false,false);
-        System.out.println(r);
-        Assert.assertTrue("操作符执行错误","小强".equals(r));
+        String r = (String) runner.execute(exp, expressContext, null, false, false);
+        Assert.assertEquals("操作符执行错误", "小强", r);
     }
 
     /**
      * 使用宏
-     * @throws Exception
+     *
+     * @throws Exception if any
      */
     @Test
-    public void testMacro() throws Exception{
+    public void testMacro() throws Exception {
         String exp = "cust.setName(\"小强\");" +
                 "定义宏 custName {cust.name};" +
                 "return custName;";
-        IExpressContext<String,Object> expressContext = new DefaultContext<String,Object>();
-        expressContext.put("cust", new CustBean(1));
+        IExpressContext<String, Object> expressContext = new DefaultContext<>();
+        expressContext.put("cust", new User(1));
         ExpressRunner runner = new ExpressRunner();
-        //
         runner.addOperatorWithAlias("定义宏", "macro", null);
-        //执行表达式，并将结果赋给r
-        String r = (String)runner.execute(exp,expressContext,null,false,false);
-        System.out.println(r);
-        Assert.assertTrue("操作符执行错误","小强".equals(r));
+        String r = (String) runner.execute(exp, expressContext, null, false, false);
+        Assert.assertEquals("操作符执行错误", "小强", r);
     }
 
 

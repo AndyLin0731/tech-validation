@@ -47,14 +47,13 @@ public class CommonGrammarTest {
 
     /**
      * 三目运算符测试
+     * 备注：测试不通过
      * @throws Exception if any
      */
     @Test
-    public void operateTriadTest() throws Exception {
+    public void logicalTernaryOperationsTest() throws Exception {
         final String express =
-                "a=1;\n" +
-                        "b=2;\n" +
-                        "return b;";
+                "a=1;b=2;max = a>b?a:b;";
         ExpressRunner runner = new ExpressRunner();
         DefaultContext<String, Object> context = new DefaultContext<>();
         Object r = runner.execute(express, context, null, true, false);

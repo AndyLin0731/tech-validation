@@ -19,8 +19,8 @@ public class BindObjectMethod {
 
     /**
      * 大写
-     * @param abc
-     * @return
+     * @param abc 字符串
+     * @return 转换后
      */
     public static String upper(String abc) {
         return abc.toUpperCase();
@@ -28,9 +28,9 @@ public class BindObjectMethod {
 
     /**
      * 任何包含
-     * @param str
-     * @param searchStr
-     * @return
+     * @param str 字符串
+     * @param searchStr 查询字符串
+     * @return 是否包含
      */
     public boolean anyContains(String str, String searchStr) {
 

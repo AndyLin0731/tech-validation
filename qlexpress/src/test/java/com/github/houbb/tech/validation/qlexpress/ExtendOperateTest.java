@@ -12,6 +12,8 @@ import com.ql.util.express.ExpressRunner;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 /**
  * <p> 操作符 </p>
  *
@@ -22,15 +24,10 @@ import org.junit.Test;
  * @version 1.0
  * @since JDK 1.7
  */
-public class OperateTest {
+public class ExtendOperateTest {
 
-    /**
-     * 循环操作符测试
-     *
-     * @throws Exception if any
-     */
     @Test
-    public void operateLoopTest() throws Exception {
+    public void replaceKeywordTest() throws Exception {
         ExpressRunner runner = new ExpressRunner();
         runner.addOperatorWithAlias("如果", "if", null);
         runner.addOperatorWithAlias("则", "then", null);
@@ -49,7 +46,7 @@ public class OperateTest {
         DefaultContext<String, Object> context = new DefaultContext<>();
         runner.addOperator("join", new JoinOperator());
         Object r = runner.execute("1 join 2 join 3", context, null, false, false);
-        System.out.println(r);
+        Assert.assertEquals(Arrays.asList(1,2,3), r);
     }
 
     @Test
@@ -58,7 +55,7 @@ public class OperateTest {
         DefaultContext<String, Object> context = new DefaultContext<>();
         runner.replaceOperator("+", new JoinOperator());
         Object r = runner.execute("1 + 2 + 3", context, null, false, false);
-        System.out.println(r);
+        Assert.assertEquals(Arrays.asList(1,2,3), r);
     }
 
     @Test
@@ -67,7 +64,7 @@ public class OperateTest {
         DefaultContext<String, Object> context = new DefaultContext<>();
         runner.addFunction("join",new JoinOperator());
         Object r = runner.execute("join(1, 2, 3)", context, null, false, false);
-        System.out.println(r);
+        Assert.assertEquals(Arrays.asList(1,2,3), r);
     }
 
 }

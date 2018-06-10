@@ -7,13 +7,28 @@ package com.github.houbb.tech.validation.qlexpress;
 
 import org.apache.commons.lang.StringUtils;
 
-public class CustBean {
+/**
+ * 备注：例子来自官方例子
+ * @author houbinbin
+ */
+public class User {
 
-	long id;
-	String name;
-	int age;
+	/**
+	 * 标识
+	 */
+	private long id;
+
+	/**
+	 * 名称
+	 */
+	private String name;
+
+	/**
+	 * 年龄
+	 */
+	private int age;
 	
-	public CustBean(long id){
+	public User(long id){
 		this.id = id;
 	}
 	
@@ -35,7 +50,12 @@ public class CustBean {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
+
+	/**
+	 * 首字母大写
+	 * @param value 字符串
+	 * @return 转换后的信息
+	 */
 	public static String firstToUpper(String value){
 		if(StringUtils.isBlank(value))
 			return "";
