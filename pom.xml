@@ -18,6 +18,7 @@
         <module>aviator</module>
         <module>velocity</module>
         <module>easy-poi</module>
+        <module>guice</module>
     </modules>
 
     <properties>

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/easy-poi/easy-poi.iml" filepath="$PROJECT_DIR$/easy-poi/easy-poi.iml" />
       <module fileurl="file://$PROJECT_DIR$/fluent-validate/fluent-validate.iml" filepath="$PROJECT_DIR$/fluent-validate/fluent-validate.iml" />
       <module fileurl="file://$PROJECT_DIR$/for-name/for-name.iml" filepath="$PROJECT_DIR$/for-name/for-name.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guice/guice.iml" filepath="$PROJECT_DIR$/guice/guice.iml" />
       <module fileurl="file://$PROJECT_DIR$/long-polling/long-polling.iml" filepath="$PROJECT_DIR$/long-polling/long-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttp/okhttp.iml" filepath="$PROJECT_DIR$/okhttp/okhttp.iml" />
       <module fileurl="file://$PROJECT_DIR$/qlexpress/qlexpress.iml" filepath="$PROJECT_DIR$/qlexpress/qlexpress.iml" />
