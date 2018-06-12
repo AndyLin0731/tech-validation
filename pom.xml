@@ -19,6 +19,7 @@
         <module>velocity</module>
         <module>easy-poi</module>
         <module>guice</module>
+        <module>javapoet</module>
     </modules>
 
     <properties>

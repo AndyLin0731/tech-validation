@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c)  2018. houbinbin Inc.
+  ~ tech-validation All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>tech-validation</artifactId>
+        <groupId>com.github.houbb</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>javapoet</artifactId>
+
+    <properties>
+        <!--============================== OTHER ==============================-->
+        <qdox.version>1.12.1</qdox.version>
+        <fastjson.version>1.2.39</fastjson.version>
+        <junit.version>4.12</junit.version>
+        <freemarker.version>2.3.23</freemarker.version>
+    </properties>
+
+    <dependencies>
+        <!--============================== OTHER ==============================-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup</groupId>
+            <artifactId>javapoet</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
