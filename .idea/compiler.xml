@@ -7,6 +7,7 @@
     <bytecodeTargetLevel>
       <module name="aviator" target="1.8" />
       <module name="bean-mapping" target="1.8" />
+      <module name="cfets" target="1.8" />
       <module name="dozer" target="1.8" />
       <module name="easy-poi" target="1.8" />
       <module name="fluent-validate" target="1.8" />
@@ -17,6 +18,7 @@
       <module name="long-polling" target="1.8" />
       <module name="okhttp" target="1.8" />
       <module name="qlexpress" target="1.8" />
+      <module name="reflect" target="1.8" />
       <module name="t-io" target="1.8" />
       <module name="tech-validation" target="1.8" />
       <module name="velocity" target="1.8" />

@@ -20,6 +20,8 @@
         <module>easy-poi</module>
         <module>guice</module>
         <module>javapoet</module>
+        <module>cfets</module>
+        <module>reflect</module>
     </modules>
 
     <properties>
