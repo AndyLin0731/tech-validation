@@ -13,6 +13,7 @@
       <module name="fluent-validate" target="1.8" />
       <module name="for-name" target="1.8" />
       <module name="guice" target="1.8" />
+      <module name="hystrix" target="1.8" />
       <module name="javapoet" target="1.8" />
       <module name="load-clazz" target="1.8" />
       <module name="long-polling" target="1.8" />

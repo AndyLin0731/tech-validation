@@ -22,6 +22,7 @@
         <module>javapoet</module>
         <module>cfets</module>
         <module>reflect</module>
+        <module>hystrix</module>
     </modules>
 
     <properties>
