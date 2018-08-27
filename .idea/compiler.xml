@@ -20,6 +20,7 @@
       <module name="okhttp" target="1.8" />
       <module name="qlexpress" target="1.8" />
       <module name="reflect" target="1.8" />
+      <module name="slf4j" target="1.8" />
       <module name="t-io" target="1.8" />
       <module name="tech-validation" target="1.8" />
       <module name="velocity" target="1.8" />
